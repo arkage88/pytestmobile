@@ -49,9 +49,17 @@ pip install -r requirements.txt
 ```
 
 ### 4. Appium & Android Emulator Setup
-1.  Open **Android Studio**.
-2.  Go to the **Virtual Device Manager** and create or start an Android Virtual Device (Emulator).
-3.  Ensure your emulator's name matches the one in your configuration (`DEVICE_NAME` in `.env`).
+1.  Setting Real Device to Developer options on plugin used usb and turn on usb debuging and type in terminal ```bash
+    adb devices
+    ```.
+2. Record App Activity to get "appium:appPackage": "id.edot.ework",
+        "appium:appActivity": "id.edot.onboarding.ui.splash.SplashScreenActivity"
+```
+adb logcat | grep START > activity_log.txt
+```
+
+.
+3.  Ensure your emulator's name matches the one in your configuration (`appium:udid` in tests file).
 4.  Run the Appium Server in a separate terminal:
     ```bash
     appium --allow-cors
