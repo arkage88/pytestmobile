@@ -49,7 +49,8 @@ pip install -r requirements.txt
 ```
 
 ### 4. Appium & Android Emulator Setup
-1.  Setting Real Device to Developer options on plugin used usb and turn on usb debuging and type in terminal ```bash
+1.  Setting Real Device to Developer options on plugin used usb and turn on usb debuging and type in terminal 
+    ```bash
     adb devices
     ```
 2. Record App Activity to get "appium:appPackage": "id.edot.ework",
