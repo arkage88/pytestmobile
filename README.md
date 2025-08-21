@@ -34,7 +34,7 @@ Before you begin, ensure your machine has the following software installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/arkage88/pytestweb
+git clone https://github.com/arkage88/pytestmobile
 cd pytestweb
 ```
 
